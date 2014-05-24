@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>//0: wandering, 1: searching, 2: attacking
 state = 1;
-sight_range = 200;
+shoot_range = 200;
+sight_range = 400;
 can_shoot = true;
 cooldown_ticks = 15;  // 1/2 sec
 </string>
@@ -87,8 +88,10 @@ cooldown_ticks = 15;  // 1/2 sec
     
     
     if ( true == can_shoot &amp;&amp; instance_exists(obj_hero) ) {
-    //if collision_ellipse(x-sight_range, y-sight_range, x+sight_range, y+sight_range, obj_hero, false, true) {
-      if ( !collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) ) { // lo veo?
+    //
+      if ( !collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) &amp;&amp;
+            collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+          ) { // lo veo?
          instance_create(x,y, obj_bullet_enemy);
          can_shoot = false;
          alarm[0] = cooldown_ticks;
