@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>move_towards_point( obj_hero.x, obj_hero.y, bullet_speed );
+            <string>
+move_towards_point( obj_hero.x, obj_hero.y, bullet_speed );
 </string>
           </argument>
         </arguments>
