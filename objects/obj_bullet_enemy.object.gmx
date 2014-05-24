@@ -26,9 +26,42 @@
           <argument>
             <kind>1</kind>
             <string>
-move_towards_point( obj_hero.x, obj_hero.y, bullet_speed );
+target_x = obj_hero.x + obj_hero.sprite_width*0.5;
+target_y = obj_hero.y + obj_hero.sprite_height*0.5;
+
+move_towards_point( target_x, target_y, bullet_speed );
 
 image_angle = direction;
+image_speed = 0;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ( 0 == distance_to_point(target_x, target_y) ) {
+//  instance_create( x + sprite_width * 0.5, y + sprite_height * 0.5, obj_banana);
+
+  instance_create( target_x, target_y, obj_banana);
+  instance_destroy();
+} 
 </string>
           </argument>
         </arguments>

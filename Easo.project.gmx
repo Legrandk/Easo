@@ -23,6 +23,7 @@
       <sprite>sprites\spr_bullet_enemy</sprite>
       <sprite>sprites\spr_crosshair</sprite>
       <sprite>sprites\spr_bullet_hero</sprite>
+      <sprite>sprites\sprite35</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\spr_gorila_idle</sprite>
@@ -52,6 +53,7 @@
         <sprite>sprites\sand_normal_left2</sprite>
         <sprite>sprites\green</sprite>
       </sprites>
+      <sprite>sprites\spr_banana</sprite>
     </sprites>
     <sprites name="powerups">
       <sprite>sprites\spr_powerup1</sprite>
@@ -114,6 +116,7 @@
       <object>objects\anim_enemy1_dying</object>
       <object>objects\anim_heroe_dying</object>
     </objects>
+    <object>objects\obj_banana</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_final</room>
