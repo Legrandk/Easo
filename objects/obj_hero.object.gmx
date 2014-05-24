@@ -147,7 +147,7 @@ if (mouse_check_button_pressed(mb_left)) {
   if ( 0 == weapon_type ) {
     instance_create(x,y,obj_bullet_hero);
   } else {
-    show_message("tienes un mega trabuko");
+    //show_message("tienes un mega trabuko");
   }
 }
 </string>
