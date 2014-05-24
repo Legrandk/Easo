@@ -7,7 +7,147 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//0: wandering, 1: searching, 2: attacking
+state = 0;
+shoot_range = 200;
+sight_range = 400;
+can_shoot = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//0: iddle, 1: attacking, 2: attacking
+
+// change state ---------------------------------------------------------------------------------
+switch( state ) {
+   case 0: //iddle
+      if ( instance_exists(obj_hero) ) {
+        if ( !collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) &amp;&amp;
+             point_distance(x,y, obj_hero.x, obj_hero.y ) &lt; shoot_range
+           ) { // lo veo?
+           state = 1;
+        }
+      }
+      break;
+
+    case 1: //attacking
+      // sigo teniendolo al alcance?
+      if ( !instance_exists(obj_hero) || 
+            collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) ||
+            point_distance(x,y, obj_hero.x, obj_hero.y ) &gt; shoot_range
+         ) {
+         state = 0;
+      }
+    break;
+
+    default:// nop
+}
+
+//---------------------------------------------------------------------------------------------
+
+if ( 1 == state ) {
+  if ( instance_exists(obj_hero) ) {
+     if ( true == can_shoot ) { 
+       instance_create( x+310, y+253, obj_fireball );
+       can_shoot = false;
+       alarm[0] = boss_cooldown_ticks;
+     //} else {
+     //  move_towards_point( obj_hero.x, obj_hero.y, 4 );
+     }
+  }
+}
+
+// Wandering?
+/*
+if ( 0 == state ) {
+  var ahead, left, right;
+
+  if ( 0 == vspeed ) {
+
+    ahead = place_free(x + hspeed, y);
+    left = place_free( x, y + 4 );
+    right = place_free( x, y - 4 );
+  
+    if ( !ahead &amp;&amp; !left &amp;&amp; !right ) { direction += 180; exit; }
+    //while (true) {
+      if ( ahead &amp;&amp; 0.05 &lt; random(1) ) { exit; }
+      if ( left &amp;&amp; random(2) &lt; 1 ) { 
+        direction = 270; 
+        sprite_index = spr_gorila_walk_down;
+        exit; 
+      } else { 
+        direction = 90; 
+        sprite_index = spr_gorila_walk_up;
+        exit; 
+      }
+      //if ( right &amp;&amp; random(2) &lt; 1 ) { direction = 90; exit; }
+    //}
+
+  } else {
+
+    ahead = place_free(x, y + vspeed );
+    left = place_free( x - 4, y );
+    right = place_free( x + 4, y );
+  
+    if ( !ahead &amp;&amp; !left &amp;&amp; !right ) { vspeed = -vspeed; exit; }
+    //while (true) {
+      if ( ahead &amp;&amp; 0.05 &lt; random(1) ) { exit; }
+      if ( left &amp;&amp; random(2) &lt; 1 ) { 
+        direction = 0; 
+        sprite_index = spr_gorila_walk_right;
+        exit; 
+      } else {
+        direction = 180;
+        sprite_index = spr_gorila_walk_left; 
+        exit; 
+      }
+      //if ( right &amp;&amp; random(2) &lt; 1 ) { direction = 180; exit; }
+    //}
+  }
+}
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>

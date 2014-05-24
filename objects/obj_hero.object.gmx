@@ -215,7 +215,7 @@ if (mouse_check_button_pressed(mb_left)) {
           </argument>
           <argument>
             <kind>0</kind>
-            <string>100000</string>
+            <string>100000000000000000</string>
           </argument>
           <argument>
             <kind>4</kind>

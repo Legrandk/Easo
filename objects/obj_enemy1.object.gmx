@@ -176,7 +176,7 @@ can_shoot = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//0: wandering, 1: alert, 2: attacking
+            <string>//0: wandering, 1: attack
 
 // change state ---------------------------------------------------------------------------------
 switch( state ) {
@@ -415,27 +415,6 @@ if ( 0 == state ) {
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>show_debug_message("EL GORILA MUERE!!!!");
-</string>
-          </argument>
-        </arguments>
       </action>
       <action>
         <libid>1</libid>
