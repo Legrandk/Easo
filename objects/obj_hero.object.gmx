@@ -64,7 +64,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button_pressed(mb_left)) {
+            <string>//toDO: segun tecla cambiar animacion
+
+/*
+if keyboard_check_pressed(ord('D')) {
+  sprite_index = spr_hero_walk_right;
+} else {
+  sprite_index = spr_hero_idle;
+}
+*/
+
+// ANIMACIONES ------------
+var new_animation;
+switch(keyboard_key) {
+    case ord('A'):
+        new_animation = spr_hero_walk_left;
+        break;
+    case ord('D'):
+        new_animation = spr_hero_walk_right;
+        break;
+    case ord('W'):
+        new_animation = spr_hero_walk_up;
+        break;
+    case ord('S'):
+        new_animation = spr_hero_walk_down;
+        break;                        
+    default:
+        new_animation = spr_hero_idle;
+}
+
+if sprite_index != new_animation { 
+    sprite_index = new_animation; 
+    image_speed = 0.5;
+}
+
+
+// DISPAROS -------------------------------------
+
+if (mouse_check_button_pressed(mb_left)) {
   instance_create(x,y,effect_shake);
   
   if ( 0 == weapon_type ) {

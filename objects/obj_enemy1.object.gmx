@@ -160,7 +160,8 @@ switch( state ) {
    case 0: //wandering
       if ( instance_exists(obj_hero) ) {
         if ( !collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) &amp;&amp;
-            collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+            //collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+            point_distance(x,y, obj_hero.x, obj_hero.y ) &lt; shoot_range
            ) { // lo veo?
            state = 1;
            
@@ -174,7 +175,7 @@ switch( state ) {
       // sigo teniendolo al alcance?
       if ( !instance_exists(obj_hero) || 
             collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) ||
-            !collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+            point_distance(x,y, obj_hero.x, obj_hero.y ) &gt; shoot_range
          ) {
          state = 0;
          hspeed = 4;
