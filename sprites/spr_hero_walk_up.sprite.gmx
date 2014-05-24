@@ -2,9 +2,9 @@
 <sprite>
   <xorig>0</xorig>
   <yorigin>0</yorigin>
-  <colkind>0</colkind>
+  <colkind>1</colkind>
   <coltolerance>0</coltolerance>
-  <sepmasks>-1</sepmasks>
+  <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
   <bbox_right>63</bbox_right>
@@ -19,6 +19,8 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\tree2_0.png</frame>
+    <frame index="0">images\spr_hero_walk_up_0.png</frame>
+    <frame index="1">images\spr_hero_walk_up_1.png</frame>
+    <frame index="2">images\spr_hero_walk_up_2.png</frame>
   </frames>
 </sprite>
