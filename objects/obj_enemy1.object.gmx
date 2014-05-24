@@ -100,7 +100,7 @@ can_shoot = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>2</string>
+            <string>6</string>
           </argument>
         </arguments>
       </action>

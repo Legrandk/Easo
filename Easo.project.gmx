@@ -133,6 +133,7 @@
     </objects>
     <objects name="controllers">
       <object>objects\hud_controller</object>
+      <object>objects\life_controller</object>
     </objects>
     <objects name="animations">
       <object>objects\anim_enemy1_dying</object>

@@ -46,30 +46,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>3</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>image_speed</string>
           </argument>
           <argument>
@@ -187,11 +163,11 @@ if (mouse_check_button_pressed(mb_left)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp</string>
+            <string>health</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-1</string>
+            <string>-10</string>
           </argument>
         </arguments>
       </action>
@@ -211,7 +187,7 @@ if (mouse_check_button_pressed(mb_left)) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>hp</string>
+            <string>health</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -339,11 +315,11 @@ if (mouse_check_button_pressed(mb_left)) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp</string>
+            <string>health</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-1</string>
+            <string>-10</string>
           </argument>
         </arguments>
       </action>
@@ -363,15 +339,15 @@ if (mouse_check_button_pressed(mb_left)) {
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>hp</string>
+            <string>health</string>
           </argument>
           <argument>
             <kind>0</kind>
-            <string>100000000000000000</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>0</string>
+            <string>1</string>
           </argument>
         </arguments>
       </action>
