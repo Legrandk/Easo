@@ -55,6 +55,12 @@
     <sprites name="powerups">
       <sprite>sprites\spr_powerup1</sprite>
     </sprites>
+    <sprites name="explosions">
+      <sprite>sprites\spr_explosion</sprite>
+    </sprites>
+    <sprites name="bullets">
+      <sprite>sprites\spr_bullet</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -98,6 +104,9 @@
     </objects>
     <objects name="powerups">
       <object>objects\obj_powerup1</object>
+    </objects>
+    <objects name="bullets">
+      <object>objects\obj_bullet</object>
     </objects>
   </objects>
   <rooms name="rooms">
