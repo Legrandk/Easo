@@ -77,6 +77,10 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+    <font>fonts\font1</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <objects name="obstacles">

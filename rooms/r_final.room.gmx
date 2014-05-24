@@ -537,6 +537,7 @@
     <instance objName="obj_enemy1" x="992" y="672" name="inst_5860A0CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="1056" y="832" name="inst_CF5B8B7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="352" y="1440" name="inst_5CA98EA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="screen_controller" x="0" y="0" name="inst_7AA4683E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background7" x="288" y="736" w="16" h="16" xo="0" yo="0" id="10000004" name="inst_22BA2F68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
