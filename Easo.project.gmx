@@ -21,7 +21,7 @@
     <sprites name="weapons">
       <sprite>sprites\spr_bullet_hero</sprite>
       <sprite>sprites\spr_bullet_enemy</sprite>
-      <sprite>sprites\sprite4</sprite>
+      <sprite>sprites\spr_crosshair</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\spr_gorila_idle</sprite>
@@ -92,7 +92,8 @@
     <room>rooms\r_final</room>
     <room>rooms\room2</room>
   </rooms>
-  <constants number="2">
+  <constants number="3">
+    <constant name="enemy_cooldown_ticks">15</constant>
     <constant name="hero_speed">5</constant>
     <constant name="bullet_speed">10</constant>
   </constants>
