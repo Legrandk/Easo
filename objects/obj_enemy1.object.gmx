@@ -189,6 +189,10 @@ switch( state ) {
            
            vspeed = 0;
            hspeed = 0;
+           
+           if ( x &lt; obj_hero.x ) { //face to hero
+              sprite_index = spr_gorila_walk_down;
+           }
         }
       }
       break;
@@ -229,29 +233,45 @@ if ( 0 == state ) {
 
   if ( 0 == vspeed ) {
 
-    ahead = place_free(x+hspeed, y);
+    ahead = place_free(x + hspeed, y);
     left = place_free( x, y + 4 );
     right = place_free( x, y - 4 );
   
     if ( !ahead &amp;&amp; !left &amp;&amp; !right ) { direction += 180; exit; }
-    while (true) {
+    //while (true) {
       if ( ahead &amp;&amp; 0.05 &lt; random(1) ) { exit; }
-      if ( left &amp;&amp; random(2) &lt; 1 ) { direction = 270; exit; }
-      if ( right &amp;&amp; random(2) &lt; 1 ) { direction = 90; exit; }
-    }
+      if ( left &amp;&amp; random(2) &lt; 1 ) { 
+        direction = 270; 
+        sprite_index = spr_gorila_walk_down;
+        exit; 
+      } else { 
+        direction = 90; 
+        sprite_index = spr_gorila_walk_up;
+        exit; 
+      }
+      //if ( right &amp;&amp; random(2) &lt; 1 ) { direction = 90; exit; }
+    //}
 
   } else {
 
     ahead = place_free(x, y + vspeed );
-    left = place_free( x, y - 4 );
-    right = place_free( x, y + 4 );
+    left = place_free( x - 4, y );
+    right = place_free( x + 4, y );
   
     if ( !ahead &amp;&amp; !left &amp;&amp; !right ) { vspeed = -vspeed; exit; }
-    while (true) {
+    //while (true) {
       if ( ahead &amp;&amp; 0.05 &lt; random(1) ) { exit; }
-      if ( left &amp;&amp; random(2) &lt; 1 ) { direction = 0; exit; }
-      if ( right &amp;&amp; random(2) &lt; 1 ) { direction = 180; exit; }
-    }
+      if ( left &amp;&amp; random(2) &lt; 1 ) { 
+        direction = 0; 
+        sprite_index = spr_gorila_walk_right;
+        exit; 
+      } else {
+        direction = 180;
+        sprite_index = spr_gorila_walk_left; 
+        exit; 
+      }
+      //if ( right &amp;&amp; random(2) &lt; 1 ) { direction = 180; exit; }
+    //}
   }
 }
 </string>
