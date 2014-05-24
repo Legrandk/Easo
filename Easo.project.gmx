@@ -11,6 +11,11 @@
     </sprites>
     <sprites name="walls">
       <sprite>sprites\wall1</sprite>
+      <sprite>sprites\tree1</sprite>
+      <sprite>sprites\tree2</sprite>
+    </sprites>
+    <sprites name="scenario_mountain">
+      <sprite>sprites\mountain_background</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -19,6 +24,11 @@
     <object>objects\obj_hero</object>
     <objects name="walls">
       <object>objects\obj_solid</object>
+      <object>objects\tree_1</object>
+      <object>objects\tree_2</object>
+    </objects>
+    <objects name="backgrounds">
+      <object>objects\mountain</object>
     </objects>
   </objects>
   <rooms name="rooms">
