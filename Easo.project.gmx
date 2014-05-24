@@ -123,6 +123,7 @@
     <objects name="effects">
       <object>objects\effect_shake</object>
       <object>objects\effect_bullet_hit</object>
+      <object>objects\effect_label</object>
     </objects>
     <objects name="controllers">
       <object>objects\obj_room_controller</object>
@@ -131,7 +132,7 @@
       <object>objects\obj_powerup1</object>
     </objects>
     <objects name="controllers">
-      <object>objects\screen_controller</object>
+      <object>objects\hud_controller</object>
     </objects>
     <objects name="animations">
       <object>objects\anim_enemy1_dying</object>

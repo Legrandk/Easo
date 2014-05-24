@@ -543,6 +543,10 @@
     <instance objName="obj_castle_left2" x="512" y="448" name="inst_E96F0599" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_flag_left" x="416" y="512" name="inst_E48ED622" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_castle_left3" x="256" y="384" name="inst_0D0DB3A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="992" y="2656" name="inst_7643B33A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="1056" y="2560" name="inst_0EB13551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="1024" y="2368" name="inst_09ED9A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="hud_controller" x="0" y="0" name="inst_CAD61C17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background7" x="288" y="736" w="16" h="16" xo="0" yo="0" id="10000004" name="inst_22BA2F68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
