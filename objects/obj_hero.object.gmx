@@ -54,6 +54,30 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_speed</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0.03</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -76,6 +100,9 @@
 
 // ANIMACIONES ------------
 var new_animation;
+
+new_image_speed = 0.5;
+
 switch(keyboard_key) {
     case ord('A'):
         new_animation = spr_hero_walk_left;
@@ -91,11 +118,12 @@ switch(keyboard_key) {
         break;                        
     default:
         new_animation = spr_hero_idle;
+        new_image_speed = 0.03;
 }
 
-if sprite_index != new_animation { 
+if ( sprite_index != new_animation ) { 
     sprite_index = new_animation; 
-    image_speed = 0.5;
+    image_speed = new_image_speed;
 }
 
 // DISPAROS -------------------------------------

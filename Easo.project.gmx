@@ -18,6 +18,17 @@
       <sprite>sprites\wall1</sprite>
       <sprite>sprites\spr_tree_1</sprite>
       <sprite>sprites\spr_tree_2</sprite>
+      <sprites name="castle">
+        <sprite>sprites\spr_castle_arc</sprite>
+        <sprite>sprites\spr_castle_flag_right</sprite>
+        <sprite>sprites\spr_castle_flag_left</sprite>
+        <sprite>sprites\spr_castle_right</sprite>
+        <sprite>sprites\spr_castle_left</sprite>
+        <sprite>sprites\spr_castle_left2</sprite>
+        <sprite>sprites\spr_castle_left3</sprite>
+        <sprite>sprites\spr_castle_back_left</sprite>
+        <sprite>sprites\spr_castle_back_right</sprite>
+      </sprites>
     </sprites>
     <sprites name="weapons">
       <sprite>sprites\spr_bullet_enemy</sprite>
@@ -89,6 +100,15 @@
       <object>objects\obj_solid</object>
       <object>objects\obj_tree_1</object>
       <object>objects\obj_tree_2</object>
+      <object>objects\obj_castle_arc</object>
+      <object>objects\obj_castle_flag_right</object>
+      <object>objects\obj_castle_flag_left</object>
+      <object>objects\obj_castle_right</object>
+      <object>objects\obj_castle_left</object>
+      <object>objects\obj_castle_left2</object>
+      <object>objects\obj_castle_left3</object>
+      <object>objects\obj_castle_back_left</object>
+      <object>objects\obj_castle_back_right</object>
     </objects>
     <objects name="weapons">
       <object>objects\obj_bullet_hero</object>
