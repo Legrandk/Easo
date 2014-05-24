@@ -103,9 +103,6 @@
     <objects name="powerups">
       <object>objects\obj_powerup1</object>
     </objects>
-    <objects name="bullets">
-      <object>objects\obj_bullet</object>
-    </objects>
     <objects name="controllers">
       <object>objects\screen_controller</object>
     </objects>
