@@ -84,7 +84,7 @@ switch( state ) {
 if ( 1 == state ) {
   if ( instance_exists(obj_hero) ) {
      if ( true == can_shoot ) { 
-       instance_create( x, y, obj_fireball );
+       instance_create( x+310, y+253, obj_fireball );
        can_shoot = false;
        alarm[0] = boss_cooldown_ticks;
      //} else {
