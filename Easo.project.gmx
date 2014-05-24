@@ -11,6 +11,8 @@
     </sprites>
     <sprites name="walls">
       <sprite>sprites\wall1</sprite>
+      <sprite>sprites\tree1</sprite>
+      <sprite>sprites\tree2</sprite>
     </sprites>
     <sprites name="weapons">
       <sprite>sprites\spr_bullet</sprite>
@@ -20,12 +22,16 @@
       <sprite>sprites\spr_enemy1</sprite>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <objects name="walls">
       <object>objects\obj_solid</object>
+      <object>objects\tree_1</object>
+      <object>objects\tree_2</object>
     </objects>
     <objects name="weapons">
       <object>objects\obj_bullet</object>
@@ -39,7 +45,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\r_final</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
