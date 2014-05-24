@@ -93,6 +93,7 @@
     </objects>
     <objects name="effects">
       <object>objects\effect_shake</object>
+      <object>objects\effect_bullet_hit</object>
     </objects>
     <objects name="controllers">
       <object>objects\obj_room_controller</object>
@@ -102,6 +103,9 @@
     </objects>
     <objects name="bullets">
       <object>objects\obj_bullet</object>
+    </objects>
+    <objects name="controllers">
+      <object>objects\screen_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">
