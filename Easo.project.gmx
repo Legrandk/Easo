@@ -33,6 +33,7 @@
       <sprites name="Final Boss">
         <sprite>sprites\spr_finalboss_walk_left</sprite>
       </sprites>
+      <sprite>sprites\spr_gorila_die</sprite>
     </sprites>
     <sprites name="grounds">
       <sprites name="Mountain">
