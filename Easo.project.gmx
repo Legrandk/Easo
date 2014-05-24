@@ -22,6 +22,7 @@
       <sprite>sprites\spr_bullet_hero</sprite>
       <sprite>sprites\spr_bullet_enemy</sprite>
       <sprite>sprites\spr_crosshair</sprite>
+      <sprite>sprites\spr_powerup</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\spr_gorila_idle</sprite>
@@ -77,6 +78,7 @@
       <object>objects\obj_bullet_hero</object>
       <object>objects\obj_bullet_enemy</object>
       <object>objects\obj_crosshair</object>
+      <object>objects\object10</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy1</object>
