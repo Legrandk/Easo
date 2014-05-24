@@ -30,6 +30,9 @@
       <sprite>sprites\spr_gorila_walk_up</sprite>
       <sprite>sprites\spr_gorila_walk_right</sprite>
       <sprite>sprites\spr_gorila_walk_left</sprite>
+      <sprites name="Final Boss">
+        <sprite>sprites\spr_finalboss_walk_left</sprite>
+      </sprites>
     </sprites>
     <sprites name="grounds">
       <sprites name="Mountain">
@@ -85,6 +88,7 @@
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy1</object>
+      <object>objects\obl_finalboss</object>
     </objects>
     <objects name="effects">
       <object>objects\effect_shake</object>
