@@ -34,7 +34,6 @@
       <sprite>sprites\spr_bullet_enemy</sprite>
       <sprite>sprites\spr_crosshair</sprite>
       <sprite>sprites\spr_bullet_hero</sprite>
-      <sprite>sprites\sprite35</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\spr_gorila_idle</sprite>
@@ -114,6 +113,7 @@
       <object>objects\obj_bullet_hero</object>
       <object>objects\obj_bullet_enemy</object>
       <object>objects\obj_crosshair</object>
+      <object>objects\obj_fireball</object>
     </objects>
     <objects name="enemies">
       <object>objects\obj_enemy1</object>
@@ -142,7 +142,8 @@
     <room>rooms\r_final</room>
     <room>rooms\room2</room>
   </rooms>
-  <constants number="3">
+  <constants number="4">
+    <constant name="boss_cooldown_ticks">10</constant>
     <constant name="enemy_cooldown_ticks">15</constant>
     <constant name="hero_speed">5</constant>
     <constant name="bullet_speed">10</constant>
