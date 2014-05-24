@@ -58,6 +58,30 @@ can_shoot = true;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>3</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="1" enumb="0">
       <action>
@@ -76,7 +100,7 @@ can_shoot = true;
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>15</string>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -160,7 +184,8 @@ switch( state ) {
    case 0: //wandering
       if ( instance_exists(obj_hero) ) {
         if ( !collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) &amp;&amp;
-            collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+            //collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+            point_distance(x,y, obj_hero.x, obj_hero.y ) &lt; shoot_range
            ) { // lo veo?
            state = 1;
            
@@ -174,7 +199,7 @@ switch( state ) {
       // sigo teniendolo al alcance?
       if ( !instance_exists(obj_hero) || 
             collision_line( x, y, obj_hero.x, obj_hero.y, obj_solid, false, false ) ||
-            !collision_ellipse(x-shoot_range, y-shoot_range, x+shoot_range, y+shoot_range, obj_hero, false, false)
+            point_distance(x,y, obj_hero.x, obj_hero.y ) &gt; shoot_range
          ) {
          state = 0;
          hspeed = 4;
@@ -191,7 +216,7 @@ switch( state ) {
 if ( 1 == state ) {
   if ( instance_exists(obj_hero) ) {
      if ( true == can_shoot ) { 
-       instance_create(x,y, obj_bullet_enemy);
+       instance_create(x + sprite_width*0.5, y + sprite_height*0.5, obj_bullet_enemy);
        can_shoot = false;
        alarm[0] = enemy_cooldown_ticks;
        vspeed = 0;
@@ -237,8 +262,34 @@ if ( 0 == state ) {
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_bullet_hero">
+      <action>
+        <libid>1</libid>
+        <id>612</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_variable</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>hp</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -252,6 +303,60 @@ if ( 0 == state ) {
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bullet_hero">
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hp</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>201</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_create_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>10</kind>
+            <object>effect_bullet_hit</object>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>sprite_width * 0.5</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>sprite_height * 0.5</string>
+          </argument>
+        </arguments>
       </action>
     </event>
   </events>

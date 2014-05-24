@@ -3,7 +3,7 @@
   <spriteName>spr_hero_idle</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>2</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,8 +30,48 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>721</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>3</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="1" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>321</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_message</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>Game Over</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>331</id>
@@ -64,21 +104,80 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (mouse_check_button_pressed(mb_left)) {
+            <string>//toDO: segun tecla cambiar animacion
+
+/*
+if keyboard_check_pressed(ord('D')) {
+  sprite_index = spr_hero_walk_right;
+} else {
+  sprite_index = spr_hero_idle;
+}
+*/
+
+// ANIMACIONES ------------
+var new_animation;
+switch(keyboard_key) {
+    case ord('A'):
+        new_animation = spr_hero_walk_left;
+        break;
+    case ord('D'):
+        new_animation = spr_hero_walk_right;
+        break;
+    case ord('W'):
+        new_animation = spr_hero_walk_up;
+        break;
+    case ord('S'):
+        new_animation = spr_hero_walk_down;
+        break;                        
+    default:
+        new_animation = spr_hero_idle;
+}
+
+if sprite_index != new_animation { 
+    sprite_index = new_animation; 
+    image_speed = 0.5;
+}
+
+
+// DISPAROS -------------------------------------
+
+if (mouse_check_button_pressed(mb_left)) {
   instance_create(x,y,effect_shake);
   
   if ( 0 == weapon_type ) {
-    instance_create(x,y,obj_bullet_hero);
+    instance_create(x + sprite_width * 0.5 ,y + sprite_height * 0.5, obj_bullet_hero);
   } else {
-    show_message("tienes un mega trabuko");
+    //show_message("tienes un mega trabuko");
   }
 }
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_bullet_enemy">
+      <action>
+        <libid>1</libid>
+        <id>722</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>-1</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_if_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>1</string>
+          </argument>
+          <argument>
+            <kind>4</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>203</id>
@@ -92,6 +191,28 @@
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_bullet_enemy">
+      <action>
+        <libid>1</libid>
+        <id>721</id>
+        <kind>0</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_set_health</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>-1</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>0</kind>
+            <string>-1</string>
+          </argument>
+        </arguments>
       </action>
     </event>
     <event eventtype="5" enumb="87">
@@ -556,6 +677,22 @@
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="82">
+      <action>
+        <libid>1</libid>
+        <id>331</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_restart_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
