@@ -62,6 +62,10 @@
     </sprites>
     <sprites name="bullets">
       <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_blue</sprite>
+      <sprite>sprites\spr_banana</sprite>
+      <sprite>sprites\spr_banana_fall</sprite>
+      <sprite>sprites\spr_bullet_fail</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -109,6 +113,10 @@
     </objects>
     <objects name="bullets">
       <object>objects\obj_bullet</object>
+      <object>objects\obj_bullet_blue</object>
+      <object>objects\obj_banana</object>
+      <object>objects\obj_banana_fall</object>
+      <object>objects\obj_bullet_fail</object>
     </objects>
   </objects>
   <rooms name="rooms">
