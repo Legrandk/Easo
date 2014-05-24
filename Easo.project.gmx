@@ -15,7 +15,8 @@
       <sprite>sprites\tree2</sprite>
     </sprites>
     <sprites name="weapons">
-      <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_bullet_hero</sprite>
+      <sprite>sprites\spr_bullet_enemy</sprite>
       <sprite>sprites\sprite4</sprite>
     </sprites>
     <sprites name="enemies">
@@ -25,7 +26,12 @@
   <backgrounds name="background">
     <background>background\background0</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path0</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <objects name="walls">
@@ -34,19 +40,27 @@
       <object>objects\tree_2</object>
     </objects>
     <objects name="weapons">
-      <object>objects\obj_bullet</object>
+      <object>objects\obj_bullet_hero</object>
+      <object>objects\obj_bullet_enemy</object>
       <object>objects\obj_crosshair</object>
     </objects>
     <objects name="enemies">
-      <object>objects\obj_enemy</object>
+      <object>objects\obj_enemy1</object>
     </objects>
     <objects name="effects">
       <object>objects\effect_shake</object>
+    </objects>
+    <objects name="controllers">
+      <object>objects\obj_room_controller</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_final</room>
   </rooms>
+  <constants number="2">
+    <constant name="hero_speed">5</constant>
+    <constant name="bullet_speed">10</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

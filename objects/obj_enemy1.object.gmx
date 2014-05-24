@@ -62,7 +62,7 @@ cooldown_ticks = 15;  // 1/2 sec
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="1">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -102,7 +102,7 @@ cooldown_ticks = 15;  // 1/2 sec
 //}
 
 
-// perform state actions
+// perform state 
 </string>
           </argument>
         </arguments>
