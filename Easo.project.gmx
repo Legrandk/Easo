@@ -19,9 +19,9 @@
       <sprite>sprites\spr_tree_2</sprite>
     </sprites>
     <sprites name="weapons">
-      <sprite>sprites\spr_bullet_hero</sprite>
       <sprite>sprites\spr_bullet_enemy</sprite>
       <sprite>sprites\spr_crosshair</sprite>
+      <sprite>sprites\spr_bullet_hero</sprite>
     </sprites>
     <sprites name="enemies">
       <sprite>sprites\spr_gorila_idle</sprite>
@@ -56,9 +56,6 @@
     </sprites>
     <sprites name="explosions">
       <sprite>sprites\spr_explosion</sprite>
-    </sprites>
-    <sprites name="bullets">
-      <sprite>sprites\spr_bullet</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
