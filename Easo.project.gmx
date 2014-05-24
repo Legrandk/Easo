@@ -49,6 +49,9 @@
         <sprite>sprites\green</sprite>
       </sprites>
     </sprites>
+    <sprites name="powerups">
+      <sprite>sprites\spr_powerup1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
@@ -88,6 +91,9 @@
     </objects>
     <objects name="controllers">
       <object>objects\obj_room_controller</object>
+    </objects>
+    <objects name="powerups">
+      <object>objects\obj_powerup1</object>
     </objects>
   </objects>
   <rooms name="rooms">
