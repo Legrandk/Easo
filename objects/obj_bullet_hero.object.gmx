@@ -34,7 +34,7 @@ image_angle = direction;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obl_finalboss">
+    <event eventtype="4" ename="obj_finalboss">
       <action>
         <libid>1</libid>
         <id>203</id>

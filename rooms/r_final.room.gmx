@@ -329,8 +329,8 @@
     <instance objName="obj_tree_1" x="-32" y="864" name="inst_50062020" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="32" y="864" name="inst_CE15F8AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="192" y="1760" name="inst_9636146A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_1" x="288" y="800" name="inst_EF29F311" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_tree_1" x="384" y="768" name="inst_1D4FD5CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="1184" y="288" name="inst_AABB08BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tree_1" x="288" y="832" name="inst_1D4FD5CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="352" y="864" name="inst_E48D923A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="256" y="896" name="inst_90BACDD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="64" y="320" name="inst_50E5978A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -353,7 +353,7 @@
     <instance objName="obj_tree_1" x="-32" y="2016" name="inst_FF381508" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="-32" y="1952" name="inst_22C2C1DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="1184" y="384" name="inst_6EC12389" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerup1" x="704" y="288" name="inst_C5662EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="864" y="256" name="inst_C5662EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="0" y="2336" name="inst_F37DB0E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="-32" y="2272" name="inst_CE843629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="32" y="2528" name="inst_E64E83F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -373,7 +373,7 @@
     <instance objName="obj_tree_1" x="0" y="2208" name="inst_F8378B9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="1088" y="416" name="inst_B51129E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="224" y="1952" name="inst_BF936942" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obl_finalboss" x="416" y="160" name="inst_4239FCC3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="448" y="736" name="inst_1F01C68E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="352" y="1248" name="inst_54CC537D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="800" y="2208" name="inst_39C45503" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="352" y="1152" name="inst_91EB759E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -545,15 +545,14 @@
     <instance objName="obj_castle_left3" x="256" y="384" name="inst_0D0DB3A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="352" y="2688" name="inst_7643B33A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="1056" y="2624" name="inst_0EB13551" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerup1" x="224" y="736" name="inst_09ED9A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="224" y="768" name="inst_09ED9A33" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="hud_controller" x="0" y="0" name="inst_CAD61C17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="life_controller" x="0" y="0" name="inst_6D82262D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="life_controller" x="0" y="32" name="inst_BA6FC60A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="992" y="800" name="inst_8CF34777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="96" y="2144" name="inst_C04BDE8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="1120" y="1376" name="inst_266B3DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerup1" x="448" y="736" name="inst_1F01C68E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerup1" x="1184" y="288" name="inst_AABB08BF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_finalboss" x="448" y="160" name="inst_F2A0075B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background7" x="288" y="736" w="16" h="16" xo="0" yo="0" id="10000004" name="inst_22BA2F68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
