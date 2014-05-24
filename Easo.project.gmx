@@ -12,6 +12,7 @@
       <sprite>sprites\spr_hero_walk_up</sprite>
       <sprite>sprites\spr_hero_walk_right</sprite>
       <sprite>sprites\spr_hero_walk_left</sprite>
+      <sprite>sprites\spr_hero_die</sprite>
     </sprites>
     <sprites name="walls">
       <sprite>sprites\wall1</sprite>
