@@ -31,12 +31,8 @@
     <background>background\background5</background>
     <background>background\background6</background>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\path0</path>
-  </paths>
-  <scripts name="scripts">
-    <script>scripts\script0.gml</script>
-  </scripts>
+  <paths name="paths"/>
+  <scripts name="scripts"/>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <objects name="walls">
