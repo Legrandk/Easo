@@ -77,7 +77,6 @@
     </sprites>
     <sprites name="powerups">
       <sprite>sprites\spr_powerup1</sprite>
-      <sprite>sprites\spr_botiquin</sprite>
     </sprites>
     <sprites name="explosions">
       <sprite>sprites\spr_explosion</sprite>
