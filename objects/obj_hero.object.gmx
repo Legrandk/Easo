@@ -54,6 +54,30 @@
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>211</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_sound</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>6</kind>
+            <sound>music_last_level</sound>
+          </argument>
+          <argument>
+            <kind>3</kind>
+            <string>1</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -108,6 +132,7 @@ if (mouse_check_button_pressed(mb_left)) {
   instance_create(x,y,effect_shake);
   
   if ( true || 0 == weapon_type ) {
+    audio_play_sound(sfx_pistol,10,false);
     instance_create(x + sprite_width * 0.5 ,y + sprite_height * 0.5, obj_bullet_hero);
   } else {
     //show_message("tienes un mega trabuko");
