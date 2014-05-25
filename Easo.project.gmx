@@ -110,6 +110,9 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\screens_script.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
     <font>fonts\font1</font>
@@ -160,7 +163,7 @@
     <objects name="controllers">
       <object>objects\hud_controller</object>
       <object>objects\life_controller</object>
-      <object>objects\goto_gameplay_controller</object>
+      <object>objects\screens_controller</object>
     </objects>
     <objects name="animations">
       <object>objects\anim_enemy1_dying</object>
