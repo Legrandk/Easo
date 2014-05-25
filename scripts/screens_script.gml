@@ -18,6 +18,6 @@ switch( room ) {
         break;
         
     case 5:
-        game_end();
+        room_goto(r_start); 
         break;
 }
