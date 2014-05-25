@@ -152,7 +152,7 @@
     <instance objName="obj_tree_2" x="896" y="1472" name="inst_B2CA72AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_2" x="896" y="1408" name="inst_98101C53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_2" x="896" y="1344" name="inst_4D26E4DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hero" x="1056" y="320" name="inst_80EF7915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hero" x="1024" y="2720" name="inst_80EF7915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="224" y="1536" name="inst_A92A3539" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="224" y="1472" name="inst_2CE39082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="256" y="1600" name="inst_D69240B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

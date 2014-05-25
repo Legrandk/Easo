@@ -215,7 +215,7 @@
         <arguments>
           <argument>
             <kind>2</kind>
-            <string>[R]ESTART     [Q]UIT</string>
+            <string>[R]ESTART    [M]ain Menu    [Q]UIT</string>
           </argument>
           <argument>
             <kind>0</kind>

@@ -1,12 +1,23 @@
+show_debug_message("ROOM IDX: " + string(room) );
 
-switch( screen_id ) {
+switch( room ) {
     case 0: 
-        screen_id = 1;
-        room_goto(r_final); 
+        room_goto(r_start); 
         break;
 
     case 1: 
-        screen_id = 0;
-        room_goto(r_start); 
+        room_goto(r_history); 
+        break;
+    
+    case 2:
+        room_goto(r_howto);
+        break;
+        
+    case 3:
+        room_goto(r_final);
+        break;
+        
+    case 5:
+        game_end();
         break;
 }
