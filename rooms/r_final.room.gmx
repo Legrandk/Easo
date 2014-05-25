@@ -152,7 +152,7 @@
     <instance objName="obj_tree_2" x="896" y="1472" name="inst_B2CA72AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_2" x="896" y="1408" name="inst_98101C53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_2" x="896" y="1344" name="inst_4D26E4DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hero" x="1024" y="2752" name="inst_80EF7915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hero" x="1056" y="320" name="inst_80EF7915" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="224" y="1536" name="inst_A92A3539" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="224" y="1472" name="inst_2CE39082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="256" y="1600" name="inst_D69240B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -353,7 +353,7 @@
     <instance objName="obj_tree_1" x="-32" y="2016" name="inst_FF381508" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="-32" y="1952" name="inst_22C2C1DB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="1184" y="384" name="inst_6EC12389" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_powerup1" x="864" y="256" name="inst_C5662EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="1088" y="224" name="inst_C5662EBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="0" y="2336" name="inst_F37DB0E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="-32" y="2272" name="inst_CE843629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="32" y="2528" name="inst_E64E83F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -368,7 +368,7 @@
     <instance objName="obj_tree_1" x="192" y="2112" name="inst_C1686850" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_crosshair" x="32" y="0" name="inst_34A22387" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="128" y="2048" name="inst_2147383D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_room_controller" x="128" y="2496" name="inst_C32B3E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="gamplay_controller" x="128" y="2496" name="inst_C32B3E97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="1120" y="1952" name="inst_D7D906E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree_1" x="0" y="2208" name="inst_F8378B9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enemy1" x="1088" y="416" name="inst_B51129E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -552,7 +552,9 @@
     <instance objName="obj_powerup1" x="992" y="800" name="inst_8CF34777" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="96" y="2144" name="inst_C04BDE8C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_powerup1" x="1120" y="1376" name="inst_266B3DA9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_finalboss" x="448" y="160" name="inst_F2A0075B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_finalboss" x="608" y="192" name="inst_F2A0075B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="448" y="320" name="inst_7B14EBF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_powerup1" x="448" y="416" name="inst_3E39591E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background7" x="288" y="736" w="16" h="16" xo="0" yo="0" id="10000004" name="inst_22BA2F68" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

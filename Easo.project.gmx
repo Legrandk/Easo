@@ -97,8 +97,8 @@
       <background>background\background15</background>
     </backgrounds>
     <backgrounds name="screens">
-      <background>background\bg_credits</background>
-      <background>background\bg_startscreen</background>
+      <background>background\bg_credits_screen</background>
+      <background>background\bg_start_screen</background>
     </backgrounds>
     <backgrounds name="stripes">
       <background>background\background6</background>
@@ -153,9 +153,6 @@
       <object>objects\effect_bullet_hit</object>
       <object>objects\effect_label</object>
     </objects>
-    <objects name="controllers">
-      <object>objects\obj_room_controller</object>
-    </objects>
     <objects name="powerups">
       <object>objects\obj_powerup1</object>
       <object>objects\obj_botiquin</object>
@@ -164,6 +161,7 @@
       <object>objects\hud_controller</object>
       <object>objects\life_controller</object>
       <object>objects\screens_controller</object>
+      <object>objects\gamplay_controller</object>
     </objects>
     <objects name="animations">
       <object>objects\anim_enemy1_dying</object>
