@@ -121,24 +121,23 @@
 // ANIMACIONES ------------
 var new_animation;
 
-new_image_speed = 0.5;
+var new_image_speed = 0.5;
 
-switch(keyboard_key) {
-    case ord('A'):
-        new_animation = spr_hero_walk_left;
-        break;
-    case ord('D'):
-        new_animation = spr_hero_walk_right;
-        break;
-    case ord('W'):
-        new_animation = spr_hero_walk_up;
-        break;
-    case ord('S'):
-        new_animation = spr_hero_walk_down;
-        break;                        
-    default:
-        new_animation = spr_hero_idle;
-        new_image_speed = 0.03;
+if ( keyboard_check(ord('W')) ) {
+  new_animation = spr_hero_walk_up;
+  
+} else if ( keyboard_check(ord('S')) ) {
+  new_animation = spr_hero_walk_down;
+  
+} else if ( keyboard_check(ord('A')) ) {
+  new_animation = spr_hero_walk_left;
+  
+} else if ( keyboard_check(ord('D')) ) {
+  new_animation = spr_hero_walk_right;
+  
+} else {        
+  new_animation = spr_hero_idle;
+  new_image_speed = 0.03;
 }
 
 if ( sprite_index != new_animation ) { 
@@ -148,10 +147,11 @@ if ( sprite_index != new_animation ) {
 
 // DISPAROS -------------------------------------
 
-if (mouse_check_button_pressed(mb_left)) {
+if (mouse_check_button_released(mb_left)) {
   instance_create(x,y,effect_shake);
   
   if ( true || 0 == weapon_type ) {
+    audio_sound_gain(sfx_pistol, 0.2, 0);
     audio_play_sound(sfx_pistol,10,false);
     instance_create(x + sprite_width * 0.5 ,y + sprite_height * 0.5, obj_bullet_hero);
   } else {
